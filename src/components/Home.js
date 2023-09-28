@@ -14,7 +14,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-7xl font-bold text-white">
               I'm a React Developer
             </h2>
-            <p className="py-4 sm">
+            <p className="py-4 sm text-white">
               As a year-old experience in React.js developer, I posses a strong
               foundation in HTML,CSS,and JavaScript. In my current job, I am a
               part of six-membered team that has created web application for
