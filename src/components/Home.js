@@ -1,13 +1,14 @@
 import React from "react";
 import myImage from "../Assests/portfolio-personal.jpeg";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
     <>
       <div
         name="home"
-        className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-500"
+        className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-900"
       >
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
@@ -23,12 +24,17 @@ export default function Home() {
               bugs.
             </p>
             <div>
-              <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-cyan-800 cursor-pointer">
-                Portfolio{" "}
+              <Link
+                to="portfolio"
+                duration
+                smooth={500}
+                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-cyan-800 cursor-pointer"
+              >
+                Portfolio
                 <span className="group-hover:rotate-90">
                   <MdKeyboardArrowRight size={25} className="ml-1" />
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
           <div>
