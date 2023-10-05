@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import myImage from "../Assests/portfolio-personal.jpeg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import Typed from "typed.js";
 
 export default function Home() {
+  // const typedRef = React.createRef();
+
+  // useEffect(() => {
+  //   const options = {
+  //     strings: ["React Developer", "Web Developer", "Creative Thinker"],
+  //     typeSpeed: 70,
+  //     backSpped: 30,
+  //     startDelay: 500,
+  //     backDelay: 1000,
+  //     showCursor: true,
+  //   };
+  //   const typed = new Typed(".typed-text", options);
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
+
   return (
     <>
       <div
@@ -12,10 +30,14 @@ export default function Home() {
       >
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
-            <h2 className="text-3xl sm:text-7xl font-bold text-white">
+            <p
+              // ref={typedRef}
+              className="text-xl sm:text-7xl font-bold text-white"
+            >
+              {/* I'm a <span className="typed-text"></span> */}
               I'm a React Developer
-            </h2>
-            <p className="py-4 sm text-white">
+            </p>
+            <p className="py-4 sm text-white text-xl">
               As a year-old experience in React.js developer, I posses a strong
               foundation in HTML,CSS,and JavaScript. In my current job, I am a
               part of six-membered team that has created web application for

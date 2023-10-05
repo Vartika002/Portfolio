@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div
@@ -17,7 +21,11 @@ export default function Contact() {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <form action="" className="flex flex-col md:w-1/2">
+            <form
+              name="submit-to-google-sheet"
+              onSubmit={handleSubmit}
+              className="flex flex-col md:w-1/2"
+            >
               <input
                 type="text"
                 name="name"
@@ -25,18 +33,22 @@ export default function Contact() {
                 className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               />
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Enter your email"
                 className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                required
               />
               <textarea
-                name="meassage"
+                name="message"
                 className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                 placeholder="Enter your message"
                 rows="10"
               ></textarea>
-              <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-600 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 duration-300">
+              <button
+                type="submit"
+                className="text-white bg-gradient-to-b from-cyan-500 to-blue-600 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 duration-300"
+              >
                 Let's Talk
               </button>
             </form>

@@ -14,5 +14,18 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxC8M5FsdL35KaKgczkVHJDfateS5izG96_837CL8zwLud01A3Lno3gBPMwdUwSuN2M/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("jhghkjh");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

@@ -40,9 +40,9 @@ export default function Navbar() {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer text-gray-500 capitalize font-medium hover:scale-105"
+              className="px-4 cursor-pointer text-gray-500 capitalize font-medium hover:scale-105 hover:text-white"
             >
-              <Link to={link} smooth duration={500}>
+              <Link to={link} smooth duration={500} activeClass="active-link">
                 {link}
               </Link>
             </li>

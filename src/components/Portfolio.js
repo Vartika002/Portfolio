@@ -1,12 +1,12 @@
 import React from "react";
 import qrCodeComponent from "../Assests/Portfolio/qrCodeComponent.png";
-import reactToDoList from "../Assests/Portfolio/reactToDoList.png";
+import nftPreview from "../Assests/Portfolio/nftPreview.png";
 import reactWeather from "../Assests/Portfolio/reactWeather.png";
 
 export default function Portfolio() {
   const portfolis = [
     { id: 1, src: qrCodeComponent },
-    { id: 2, src: reactToDoList },
+    { id: 2, src: nftPreview },
     { id: 3, src: reactWeather },
   ];
 
@@ -23,7 +23,7 @@ export default function Portfolio() {
             </p>
             <p className="text-xl py-6">Check out some of my work here</p>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0">
             {portfolis.map(({ id, src }) => (
               <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
                 <img

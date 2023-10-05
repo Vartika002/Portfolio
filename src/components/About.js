@@ -16,26 +16,22 @@ export default function About() {
           <p className="text-xl py-6">
             I am a React developer with one year of hands-on experience in
             creating dynamic and responsive web applications. My journey began
-            with a strong foundation in JavaScript and React, where I quickly
-            mastered the principles of component-based development and state
-            management. Over the past year, I've had the privilege of working on
-            a Payroll Management System project.
+            with a strong foundation in JavaScript and React. Over the past
+            year, I've had the privilege of working on a Payroll Management
+            System project.
           </p>
           <br />
           <p className="text-xl">
             To enhance the platform's functionality, I integrated various APIs
             seamlessly, utilizing the Axios library for efficient handling of
             HTTP requests. Additionally, I implemented Redux-Saga middleware to
-            manage asynchronous actions and side effects, ensuring a smooth user
-            experience. I integrated JWT token-based authentication for secure
-            user access and developed user-friendly login pages. Our development
-            workflow was streamlined using Azure DevOps for version control,
-            project management, testing, and application lifecycle management.
-            Furthermore, I optimized the platform by enabling bulk data updates
-            through Excel templates, and I played a crucial role in a successful
-            migration process. Lastly, I addressed and resolved any bugs or
-            issues associated with existing platform functionalities for
-            ensuring smooth and efficient operations.
+            manage asynchronous actions and side effects.I integrated JWT
+            token-based authentication for secure user access and developed
+            login pages. Our development workflow was streamlined using Azure
+            DevOps for version control, project management, testing, and
+            application lifecycle management. Lastly, I addressed and resolved
+            any bugs or issues associated with existing platform functionalities
+            for ensuring smooth and efficient operations.
           </p>
         </div>
       </div>
