@@ -8,12 +8,12 @@ export default function About() {
         className="w-full h-screen text-white bg-gradient-to-b from-gray-900 to to-black"
       >
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-          <div className="pb-8">
+          <div className="pb-8 mt-[-200px]">
             <p className="text-4xl font-bold inline border-b-4 border-gray-400">
               About
             </p>
           </div>
-          <p className="text-xl py-6">
+          <p className="text-lg py-6">
             I am a React developer with one year of hands-on experience in
             creating dynamic and responsive web applications. My journey began
             with a strong foundation in JavaScript and React. Over the past
@@ -21,7 +21,7 @@ export default function About() {
             System project.
           </p>
           <br />
-          <p className="text-xl">
+          <p className="text-lg">
             To enhance the platform's functionality, I integrated various APIs
             seamlessly, utilizing the Axios library for efficient handling of
             HTTP requests. Additionally, I implemented Redux-Saga middleware to

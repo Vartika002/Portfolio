@@ -19,11 +19,11 @@ export default function Experience() {
   return (
     <>
       <div
-        name="experinece"
+        name="experience"
         className="bg-gradient-to-b from-gray-800 to-black w-full h-screen p-4"
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-          <div className="pb-8">
+          <div className="pb-8 mt-[120px]">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500">
               Experience
             </p>
