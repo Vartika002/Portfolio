@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <div
         name="home"
-        className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-900"
+        className="w-full bg-gradient-to-b from-black via-black to-gray-900"
       >
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
@@ -34,10 +34,10 @@ export default function Home() {
               ref={typedRef}
               className="text-xl sm:text-5xl font-bold text-white"
             >
-              I'm a <span className="typed-text animate-pulse"></span>
+              I'm a <span className="typed-text"></span>
               {/* I'm a React Developer */}
             </p>
-            <p className="py-4 sm text-white text-lg">
+            <p className="py-4 text-white text-lg">
               As a year-old experience in React.js developer, I posses a strong
               foundation in HTML,CSS,and JavaScript. In my current job, I am a
               part of six-membered team that has created web application for

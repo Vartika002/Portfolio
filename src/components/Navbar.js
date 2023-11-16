@@ -29,7 +29,7 @@ export default function Navbar() {
   ];
   return (
     <>
-      <div className="flex justify-between items-center w-full h-20 bg-gray-800 fixed px-4">
+      <div className="flex justify-between items-center w-full h-20 bg-gray-900 px-4">
         <div>
           <h1 className="text-5xl text-gray-500 font-signature ml-2">
             Vartika
@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
 
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b text-gray-500 from-black to-gray-900">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full bg-gradient-to-b text-gray-500 from-black to-gray-900">
             {links.map(({ id, link }) => (
               <li
                 key={id}
